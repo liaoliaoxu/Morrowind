@@ -13,11 +13,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @date 2022/12/7
  */
 @SpringBootApplication(scanBasePackages = "com.morrowind.web", exclude = {
-        RedisAutoConfiguration.class,
         RedisRepositoriesAutoConfiguration.class,
         RabbitAutoConfiguration.class,
-        JdbcRepositoriesAutoConfiguration.class,
-        DataSourceAutoConfiguration.class
+        JdbcRepositoriesAutoConfiguration.class
 }
 )
 public class MorrowindWebApplication{
